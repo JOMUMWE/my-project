@@ -4,10 +4,12 @@ import "./index.css";
 import { TheDate } from "./date";
 import { Hero } from "./hero";
 import { Edu } from "./educationHistory";
-import { getData } from "./myeducationdata";
+import { getData, getContactData } from "./myeducationdata";
+import { LinkButton } from "./Socials";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const data = getData();
+const data1 = getContactData();
 root.render(
   <div>
     <TheDate />
@@ -56,10 +58,26 @@ root.render(
         <p className="border border-solid rounded-full border-gray-700 mr-2 p-2">
           Python
         </p>
+        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2">
+          MongoDB
+        </p>
       </div>
     </section>
     <section>
       <h3 className="text-white text-lg mt-10 mb-2 font-bold">Projects</h3>
+    </section>
+    <section>
+      <h3 className="text-white text-lg mt-10 mb-2 font-bold">Contacts</h3>
+      <div className="flex flex-row">
+        {data1.map((item) => (
+          <LinkButton
+            _id = {item._id}
+            icon={item.icon}
+            link={item.link}
+            text={item.description}
+          />
+        ))}
+      </div>
     </section>
   </div>
 );

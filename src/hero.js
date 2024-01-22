@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 export class Hero extends Component {
   render() {
@@ -9,7 +9,7 @@ export class Hero extends Component {
           <img
             src={require("./dppic.jpg")}
             alt="a profile pic"
-            className="h-32 w-28 rounded"
+            className="h-28 w-28 rounded-full object-fill object-center"
           ></img>
         </div>
         <div className="flex flex-col text-gray-300 ml-6 ">
