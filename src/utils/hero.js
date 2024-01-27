@@ -1,21 +1,19 @@
 import React, { Component } from "react";
 
-
 export class Hero extends Component {
   render() {
+    const img = require("../assets/images/dppic.jpg");
     return (
       <div className="flex flex-row">
         <div>
           <img
-            src={require("./dppic.jpg")}
+            src={img}
             alt="a profile pic"
             className="h-28 w-28 rounded-full object-fill object-center"
           ></img>
         </div>
         <div className="flex flex-col text-gray-300 ml-6 ">
-          <p className="text-2xl font-bold mb-2 text-white">
-            Joshua Muindi
-          </p>
+          <p className="text-2xl font-bold mb-2 text-white">Joshua Muindi</p>
           <p className="font-semibold text-base">Developer</p>
           <p>
             <svg

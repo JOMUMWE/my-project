@@ -1,27 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { TheDate } from "./date";
-import { Hero } from "./hero";
-import { Edu } from "./educationHistory";
-import { getData, getContactData } from "./myeducationdata";
-import { LinkButton } from "./Socials";
+import { TheDate } from "./utils/date";
+import { Hero } from "./utils/hero";
+import { Edu } from "./utils/educationHistory";
+import { getData, getContactData } from "./data/myeducationdata";
+import { LinkButton } from "./utils/Socials";
+import { Foot } from "./utils/footer";
+import { useScroll, motion } from "framer-motion";  
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const data = getData();
 const data1 = getContactData();
 root.render(
-  <div>
+  <div className=" mx-auto md:w-6/12 sm:w-11/12 sm:text-sm md:mx-auto lg:w-6/12 josh mt-5">
     <TheDate />
     <Hero />
     <section className="text-gray-400">
       <h3 className="text-white text-lg mt-10 mb-2 font-bold">About</h3>
       <p className="font-light text-sm">
-        Hey there! I'm Joshua Mwendwa Muindi <span>'JOMUMWE'</span>, a fullstack
-        web wizard weaving magic with various frameworks. Beyond pixels and
-        code, I dive into the worlds of game development and AI, turning
-        curiosity into innovation. Let's code dreams into reality together!
-        🌐🎮🤖
+        Hey there! I'm Joshua Mwendwa Muindi [
+        <span className=" italic underline ">JOMUMWE</span>], a fullstack web
+        wizard weaving magic with various frameworks. Beyond pixels and code, I
+        dive into the worlds of game development and AI, turning curiosity into
+        innovation. Let's code dreams into reality together! 🌐🎮🤖
       </p>
     </section>
     <section>
@@ -42,23 +44,23 @@ root.render(
     </section>
     <section>
       <h3 className="text-white text-lg mt-10 mb-2 font-bold">Skills</h3>
-      <div className="font-semibold text-white text-xs flex flex-row">
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2">
+      <div className="font-semibold text-white text-xs flex flex-row flex-wrap">
+        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2 text-nowrap">
           React
         </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2">
+        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2 text-nowrap">
           Nodejs
         </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2">
+        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2 text-nowrap">
           Tailwind CSS
         </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2">
+        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2 text-nowrap">
           JavaScript
         </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2">
+        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2  text-nowrap">
           Python
         </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2">
+        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2  text-nowrap">
           MongoDB
         </p>
       </div>
@@ -68,10 +70,10 @@ root.render(
     </section>
     <section>
       <h3 className="text-white text-lg mt-10 mb-2 font-bold">Contacts</h3>
-      <div className="flex flex-row">
+      <div className="flex flex-row flex-wrap">
         {data1.map((item) => (
           <LinkButton
-            _id = {item._id}
+            _id={item._id}
             icon={item.icon}
             link={item.link}
             text={item.description}
@@ -79,6 +81,7 @@ root.render(
         ))}
       </div>
     </section>
+    <Foot />
   </div>
 );
 

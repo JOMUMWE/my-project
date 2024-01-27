@@ -11,7 +11,15 @@
 }
 body{
   background-color: #171717;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', monospace;
 }
 
+@media (max-width: 640px) {
+    div.josh{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 0.875rem/* 14px */;
+        line-height: 1.25rem/* 20px */;
+    }
+}
 
