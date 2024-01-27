@@ -7,11 +7,12 @@ import { Edu } from "./utils/educationHistory";
 import { getData, getContactData } from "./data/myeducationdata";
 import { LinkButton } from "./utils/Socials";
 import { Foot } from "./utils/footer";
-import { useScroll, motion } from "framer-motion";  
+import { motion } from "framer-motion";  
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const data = getData();
 const data1 = getContactData();
+const mySkillsArray = ["HTML","CSS","JavaScript","React","TailwindCSS","MYSQL","MongoDB","Python","Java","C#"];
 root.render(
   <div className=" mx-auto md:w-6/12 sm:w-11/12 sm:text-sm md:mx-auto lg:w-6/12 josh mt-5">
     <TheDate />
@@ -45,24 +46,26 @@ root.render(
     <section>
       <h3 className="text-white text-lg mt-10 mb-2 font-bold">Skills</h3>
       <div className="font-semibold text-white text-xs flex flex-row flex-wrap">
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2 text-nowrap">
-          React
-        </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2 text-nowrap">
-          Nodejs
-        </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2 text-nowrap">
-          Tailwind CSS
-        </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2 text-nowrap">
-          JavaScript
-        </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2  text-nowrap">
-          Python
-        </p>
-        <p className="border border-solid rounded-full border-gray-700 mr-2 p-2  text-nowrap">
-          MongoDB
-        </p>
+        {mySkillsArray.map((element) => (
+          <motion.p
+            layout
+            initial={{
+              scale: 0,
+              x: 100,
+            }}
+            whileInView={{
+              scale: 1,
+              x: 0,
+            }}
+            transition={{
+              duration:(mySkillsArray.indexOf(element))*0.15,
+              type: " ease-in-out",
+            }}
+            className="border border-solid rounded-full border-gray-700 mr-2 p-2 text-nowrap topmrmr"
+          >
+            {element}
+          </motion.p>
+        ))}
       </div>
     </section>
     <section>
@@ -85,6 +88,3 @@ root.render(
   </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

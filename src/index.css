@@ -18,8 +18,11 @@ body{
     div.josh{
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 0.875rem/* 14px */;
+        font-size: 0.805rem/* 14px */;
         line-height: 1.25rem/* 20px */;
+    }
+    .topmrmr{
+      margin-top: 10px;
     }
 }
 
