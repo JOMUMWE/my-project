@@ -36,7 +36,7 @@ const contactData = [
   {
     _id: "5b21ca3eeb7f6fbccd471415",
     link: "http://www.linkedin.com/in/joshua-muindi-06ba2a28a",
-    description: "Wehh DM!",
+    description: "LinkedIn",
     icon: <BsLinkedin className="w-4 h-4" />,
   },
   {

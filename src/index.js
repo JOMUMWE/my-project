@@ -28,9 +28,8 @@ root.render(
       </p>
     </section>
     <section>
-      <h3 className="text-white text-lg mt-10 mb-2 font-bold">
-        Work Experience
-      </h3>
+      <h3 className="text-white text-lg mt-10 mb-2 font-bold">Work Experience</h3>
+      
     </section>
     <section>
       <h3 className="text-white text-lg mt-10 mb-2 font-bold">Education</h3>
