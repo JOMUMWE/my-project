@@ -55,7 +55,7 @@ root.render(
           <div className="flex flex-row w-full ">
             <a
               href="https://www.nestle-esar.com/aboutus/esar/kenya"
-              className="hover:underline text-white font-semibold"
+              className="hover:underline text-white font-semibold underlinesmall"
             >
               Nestlé Kenya ltd.
             </a>
@@ -67,7 +67,7 @@ root.render(
             2022-2023
           </p>
         </div>
-        <p className="text-white font-medium mb-2">
+        <p className="text-white font-normal mb-2">
           Distribution Commission Support Stuff
         </p>
         <p className="font-light text-gray-400 text-sm">
