@@ -29,7 +29,7 @@ const data = [
 const contactData = [
   {
     _id: "5b21ca3eeb7f6fbccd471415",
-    link: "http://mailto:muindijoshua032@gmail.com",
+    link: "mailto:muindijoshua032@gmail.com",
     description: "muindijoshua032@gmail.com",
     icon: <FaEnvelope className="w-4 h-4" />,
   },
@@ -39,12 +39,12 @@ const contactData = [
     description: "LinkedIn",
     icon: <BsLinkedin className="w-4 h-4" />,
   },
-  {
-    _id: "5b21ca3eeb7f6fbced471415",
-    link: "http://",
-    description: "Meet",
-    icon: <FaCalendar className="w-4 h-4" />,
-  },
+  // {
+  //   _id: "5b21ca3eeb7f6fbced471415",
+  //   link: "http://",
+  //   description: "Meet",
+  //   icon: <FaCalendar className="w-4 h-4" />,
+  // },
 ];
 
 const projectData = [];

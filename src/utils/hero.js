@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-
+import { motion } from "framer-motion";
 export class Hero extends Component {
   render() {
-    const img = require("../assets/images/dppic.jpg");
+    const img = require("../assets/images/IMG_20221120_131530.jpg");
     return (
       <div className="flex flex-row">
-        <div>
-          <img
-            src={img}
-            alt="a profile pic"
-            className="h-28 w-28 rounded-full object-fill object-center"
-          ></img>
+        <div
+          className="rounded-md object-center object-scale-down overflow-hidden"
+        >
+          <img src={img} alt="a profile pic" className=" w-32"></img>
         </div>
         <div className="flex flex-col text-gray-300 ml-6 ">
           <p className="text-2xl font-bold mb-2 text-white">Joshua Muindi</p>

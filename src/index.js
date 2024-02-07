@@ -118,9 +118,9 @@ root.render(
         ))}
       </div>
     </section>
-    <section>
+    {/* <section>
       <h3 className="text-white text-lg mt-10 mb-2 font-bold">Projects</h3>
-    </section>
+    </section> */}
     <section>
       <h3 className="text-white text-lg mt-10 mb-2 font-bold">Contacts</h3>
       <div className="flex flex-row flex-wrap">
