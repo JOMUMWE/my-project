@@ -23,6 +23,10 @@ const mySkillsArray = [
   "Python",
   "Java",
   "C#",
+  "Node",
+  "AI",
+  "ML",
+  "ComputerVision",
 ];
 root.render(
   <div className=" mx-auto md:w-6/12 sm:w-11/12 sm:text-sm md:mx-auto lg:w-6/12 josh mt-5">
