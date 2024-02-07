@@ -1,2 +1,2 @@
 *My First Potfolio Website*
-*Hi! I'm JOshu Muindi Mwendwa (JOMUMWE)*
+*Hi! I'm Joshua Muindi Mwendwa (JOMUMWE)*
