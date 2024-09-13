@@ -1,6 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion';
-
+import React from "react";
+import { motion } from "framer-motion";
 
 export default function Experience() {
   return (
@@ -65,7 +64,7 @@ export default function Experience() {
               Onsite
             </p>
           </div>
-          <p className="font-light text-gray-400 text-sm justify-self-end text-nowrap">
+          <p className="font-light text-gray-400 text-sm justify-self-end text-nowrap ml-2">
             2024
           </p>
         </div>
