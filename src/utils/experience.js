@@ -56,7 +56,7 @@ export default function Experience() {
         <div className="flex flex-row justify-start mb-1">
           <div className="flex flex-row w-full ">
             <a
-              href="https://www.nestle-esar.com/aboutus/esar/kenya"
+              href="https://www.kengen.co.ke"
               className="hover:underline text-white font-semibold underlinesmall"
             >
               Kenya Electricity Generating Company PLC (KenGen)
@@ -69,11 +69,19 @@ export default function Experience() {
             2024
           </p>
         </div>
-        <p className="text-white font-normal mb-2">
-          ICT department Attachee
-        </p>
+        <p className="text-white font-normal mb-2">ICT department Attachee</p>
         <p className="font-light text-gray-400 text-sm">
-          
+          I have a solid foundation in Information Communication Technology
+          (ICT) with a focus on network administration, system maintenance, and
+          software management. During my industrial attachment at KenGen, I
+          gained practical experience in implementing and maintaining ICT
+          solutions, including network infrastructure, computer systems, and
+          software applications. I am proficient in using Microsoft Office
+          Suite, have knowledge of SCADA systems, and am skilled in
+          troubleshooting technical issues. My experience also includes working
+          with video conferencing systems and providing helpdesk support. I am a
+          dedicated and hardworking individual with a strong problem-solving
+          ability and a commitment to delivering high-quality results.
         </p>
       </motion.div>
     </>
