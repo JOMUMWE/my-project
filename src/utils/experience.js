@@ -61,7 +61,7 @@ export default function Experience() {
             >
               Kenya Electricity Generating Company PLC (KenGen)
             </a>
-            <p className="border border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm">
+            <p className="border border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
               Onsite
             </p>
           </div>
