@@ -70,17 +70,13 @@ export default function Experience() {
         </div>
         <p className="text-white font-normal mb-2">ICT department Attachee</p>
         <p className="font-light text-gray-400 text-sm">
-          I have a solid foundation in Information Communication Technology
-          (ICT) with a focus on network administration, system maintenance, and
-          software management. During my industrial attachment at KenGen, I
-          gained practical experience in implementing and maintaining ICT
-          solutions, including network infrastructure, computer systems, and
-          software applications. I am proficient in using Microsoft Office
-          Suite, have knowledge of SCADA systems, and am skilled in
-          troubleshooting technical issues. My experience also includes working
-          with video conferencing systems and providing helpdesk support. I am a
-          dedicated and hardworking individual with a strong problem-solving
-          ability and a commitment to delivering high-quality results.
+          During my industrial attachment at KenGen, I honed my technical skills
+          in network administration, system maintenance, and software
+          management. I delved into the intricacies of SCADA systems, mastered
+          the Microsoft Office Suite, and gained hands-on experience with video
+          conferencing and helpdesk support. These experiences equipped me with
+          a solid foundation in ICT and a practical understanding of real-world
+          applications.
         </p>
       </motion.div>
     </>
