@@ -71,12 +71,22 @@ export default function Experience() {
         <p className="text-white font-normal mb-2">ICT department Attachee</p>
         <p className="font-light text-gray-400 text-sm">
           During my industrial attachment at KenGen, I honed my technical skills
-          in network administration, system maintenance, and software
-          management. I delved into the intricacies of SCADA systems, mastered
-          the Microsoft Office Suite, and gained hands-on experience with video
-          conferencing and helpdesk support. These experiences equipped me with
-          a solid foundation in ICT and a practical understanding of real-world
-          applications.
+          in{" "}
+          <p className="border border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
+            Network administration
+          </p>
+          <p className="border border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
+            System maintenance
+          </p>
+          ,and
+          <p className="border border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
+          Software management
+          </p>
+          . I delved into the intricacies of SCADA systems,
+          mastered the Microsoft Office Suite, and gained hands-on experience
+          with video conferencing and helpdesk support. These experiences
+          equipped me with a solid foundation in ICT and a practical
+          understanding of real-world applications.
         </p>
       </motion.div>
     </>
