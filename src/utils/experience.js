@@ -72,14 +72,14 @@ export default function Experience() {
         <p className="font-light text-gray-400 text-sm">
           During my industrial attachment at KenGen, I honed my technical skills
           in{" "}
-          <p className="border border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
+          <p className="border w-fit border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
             Network administration
           </p>
-          <p className="border border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
+          <p className="border w-fit border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
             System maintenance
           </p>
           ,and
-          <p className="border border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
+          <p className="border w-fit border-gray-600 rounded-full px-2 ml-1 text-white font-semibold text-sm h-fit">
           Software management
           </p>
           . I delved into the intricacies of SCADA systems,
