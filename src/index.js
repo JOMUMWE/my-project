@@ -31,6 +31,32 @@ const mySkillsArray = [
   "ML",
   "ComputerVision",
 ];
+const projects = [
+  {
+    title: "CollabCode",
+    description:
+      "A real-time collaborative code editor that enables multiple users to write, edit, and debug code together.",
+    github: "https://github.com/JOMUMWE/CollabCode.git",
+    live: "https://jomumwe-collabcode.onrender.com",
+    technologies: [
+      "React",
+      "Node.js",
+      "Socket.IO",
+      "MongoDB",
+      "Express",
+      "JWT",
+      "TailwindCSS",
+    ],
+  },
+  {
+    title: "STAKD",
+    description:
+      "A comprehensive property management system built with React, TypeScript, Tailwind CSS, and Firebase Firestore.",
+    github: "https://github.com/yourrepo/portfolio",
+    live: "https://www.stakdpropertymanagement.site/",
+    technologies: ["React", "TailwindCSS", "Firebase Firestore", "TypeScript", "others"],
+  }
+];
 root.render(
   <>
     <div className=" mx-auto md:w-6/12 sm:w-11/12 sm:text-sm md:mx-auto lg:w-6/12 josh mt-5">
@@ -90,7 +116,16 @@ root.render(
       </section>
       <section>
         <h3 className="text-white text-lg mt-10 mb-2 font-bold">Projects</h3>
-        <Project />
+        {projects.map((project, index) => (
+          <Project
+            key={index}
+            title={project.title}
+            description={project.description}
+            technologies={project.technologies}
+            github={project.github}
+            live={project.live}
+          />
+        ))}
       </section>
       <section>
         <h3 className="text-white text-lg mt-10 mb-2 font-bold">Contacts</h3>
@@ -108,5 +143,5 @@ root.render(
       <Foot />
     </div>
     <ScrollToTop />
-  </>
+  </>,
 );

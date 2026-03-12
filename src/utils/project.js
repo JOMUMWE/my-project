@@ -5,23 +5,12 @@ import { TbWorldWww } from "react-icons/tb";
 
 export class Project extends Component {
   render() {
-    const technologies = [
-      "React",
-      "Node.js",
-      "Socket.IO",
-      "MongoDB",
-      "Express",
-      "JWT",
-      "TailwindCSS",
-    ];
+    const { title, description, technologies, github, live } = this.props;
 
     return (
       <motion.div
         className="bg-neutral-950 rounded-lg p-5 mb-4 border border-gray-600 relative group overflow-hidden"
-        initial={{
-          scale: 0.5,
-          opacity: 0,
-        }}
+        initial={{ scale: 0.5, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.25 }}
       >
@@ -29,39 +18,38 @@ export class Project extends Component {
 
         <div className="flex flex-col relative">
           <div className="flex flex-row justify-between items-center mb-3">
-            <h4 className="text-white font-semibold text-lg">CollabCode</h4>
+            <h4 className="text-white font-semibold text-lg">{title}</h4>
+
             <div className="flex space-x-3">
-              <motion.a
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                href="https://github.com/JOMUMWE/CollabCode.git"
-                className="text-gray-400 hover:text-white"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub className="w-5 h-5" />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                href="https://jomumwe-collabcode.onrender.com"
-                className="text-gray-400 hover:text-white"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <TbWorldWww className="w-5 h-5" />
-              </motion.a>
+              {github && (
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  href={github}
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="w-5 h-5" />
+                </motion.a>
+              )}
+
+              {live && (
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  href={live}
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TbWorldWww className="w-5 h-5" />
+                </motion.a>
+              )}
             </div>
           </div>
 
-          
-
-          <p className="text-gray-400 text-sm font-light mb-4">
-            A real-time collaborative code editor that enables multiple users to
-            write, edit, and debug code together seamlessly. Built as a
-            fourth-year final project, it features live collaboration, syntax
-            highlighting, and secure user authentication.
-          </p>
+          <p className="text-gray-400 text-sm font-light mb-4">{description}</p>
 
           <div className="flex flex-wrap gap-2">
             {technologies.map((tech, index) => (

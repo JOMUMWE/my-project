@@ -8,7 +8,7 @@ const data = [
     _id: "5b21ca3eeb7f6fbccd471815",
     year: "2021-2025",
     chuo: "Maseno University, Maseno, Kisumu",
-    description: "Currently undertaking my Computer Science Degree",
+    description: "Graduated with a Bachelor of Science in Computer Science, first class honors. During my time at Maseno University, I actively engaged in various extracurricular activities, including participation in coding competitions and tech clubs, which further honed my skills and passion for technology.",
   },
   {
     _id: "5b21ca3eeb7f6fbccd471816",
